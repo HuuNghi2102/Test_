@@ -18,25 +18,24 @@ const GetAPIUser = async() =>{
     }
 }
 
-document.getElementById('loginButton').addEventListener('click',async()=>{
+document.getElementById('loginButton').addEventListener('click',async(e)=>{
     console.log('adad');
-    // event.preventDefault();
+    e.preventDefault();
     try{
         let user = document.getElementById('username').value;
         let password = document.getElementById('password').value;
         
         let getUserAPI = await GetAPIUser(); 
         console.log(getUserAPI);
-        let a = getUserAPI.find(item => {
-            if(item.username === user && item.password === password){
-                alert('Đăng nhập thành công');
-                return;
-                
-            } else if(item.username !== user && item.password !== password){
-                alert('Tài khoản hoặc mật khẩu không đúng');
-                return;
-            }
+        let a = getUserAPI.some(item => {
+            return item.username === user && item.password === password
         })
+        if(a){
+            alert('Đăng nhập thành công');
+            window.location.href = "index.html";
+        }else{
+            alert("Tài khoản hoặc mật khẩu không đúng")
+        }
         console.log(a);
         
     }catch (error) {

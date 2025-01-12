@@ -13,14 +13,7 @@ const getAPI = async () => {
         console.log(error);
     }
 }
-const start = async () =>{
-    await getAPI();
-    await renderStudent();
-    await handleCreateStudent();
-    await deleteStudent();
-    await updateStudent();
-}
-start();
+
 const renderStudent = async () => {
     try {
         let dataStudents = await getAPI();
@@ -71,13 +64,13 @@ const handleCreateStudent = async() =>{
             let Age = document.querySelector('input[name="age"]');
             let Gender = document.querySelector('input[name="gender"]');
             let Class = document.querySelector('input[name="class"]');
-            let AcaPer = document.querySelector('input[name="acaper"]');
+            // let AcaPer = document.querySelector('input[name="acaper"]');
             const data = {
                 Name: Name.value.trim(),
                 Age: Age.value.trim(),
                 Gender: Gender.value.trim(),
                 Class: Class.value.trim(),
-                AcaPer: AcaPer.value.trim()
+                // AcaPer: AcaPer.value.trim()
             }
             await createStudents(data);
         }
@@ -93,7 +86,7 @@ const deleteStudent = async(id) => {
             const optionsDelete = {
                 method: 'DELETE',
             }
-            // const response = await fetch(getAPIStudents+ "/" + id, optionsDelete);
+            const response = await fetch(getAPIStudents+ "/" + id, optionsDelete);
             if (!response.ok) {
                 throw new Error('Lỗii');
             }else{
@@ -170,3 +163,11 @@ const updateStudent = async(id) =>{
         
     }
 }
+const start = async () =>{
+    await getAPI();
+    await renderStudent();
+    await handleCreateStudent();
+    // await deleteStudent();
+    // await updateStudent();
+}
+start();
