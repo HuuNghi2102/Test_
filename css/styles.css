@@ -51,6 +51,7 @@ body {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    margin: 10px 0px;
   }
   input[type="submit"]:hover{
     background: linear-gradient(45deg, #9370DB, #FF7F50);
@@ -66,7 +67,17 @@ body {
   }
   .facebook{
     color: blue;
+    margin: 10px 0px;
+
   }
   .google{
     color: red;
+    margin: 10px 7px;
+  }
+  button{
+    margin: 10px 7px;
+  }
+  p{
+    text-align: center;
+    margin: 5px 0px;
   }

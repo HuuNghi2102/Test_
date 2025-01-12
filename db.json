@@ -1,22 +1,22 @@
 {
   "user": [
     {
+      "username": "HuuNghizzzz",
+      "email": "huunghitc1@gmail.com",
+      "password": "123123Ga@",
+      "id": 4
+    },
+    {
+      "username": "HuuNghitt",
+      "email": "huunghitc1@gmail.com",
+      "password": "123123Ga@",
+      "id": 5
+    },
+    {
       "username": "HuuNghi",
       "email": "huunghitc1@gmail.com",
-      "password": "0385663385Ga@",
-      "id": 1
-    },
-    {
-      "username": "HuuNghiwe",
-      "email": "huunghitc1@gmail.com",
-      "password": "0385663385Ga@",
-      "id": 2
-    },
-    {
-      "username": "HuuNghiwe",
-      "email": "huunghitc1@gmail.c",
-      "password": "123123123Ga@",
-      "id": 3
+      "password": "12312313Ga@",
+      "id": 6
     }
   ],
   "students": [
