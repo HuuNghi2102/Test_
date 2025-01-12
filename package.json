@@ -1,0 +1,22 @@
+{
+  "name": "test1",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "start": "json-server --watch db.json"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.17",
+    "vite": "^6.0.6"
+  },
+  "dependencies": {
+    "json-server": "^0.17.4"
+  }
+}

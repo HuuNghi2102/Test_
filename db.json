@@ -1,0 +1,41 @@
+{
+  "user": [
+    {
+      "username": "HuuNghi",
+      "email": "huunghitc1@gmail.com",
+      "password": "0385663385Ga@",
+      "id": 1
+    }
+  ],
+  "students": [
+    {
+      "Name": "Demo ERD",
+      "Age": "11",
+      "Gender": "nam",
+      "Class": "wd19311",
+      "id": 2
+    },
+    {
+      "Name": "",
+      "Age": "",
+      "Gender": "",
+      "Class": "",
+      "AcaPer": "",
+      "id": 3
+    },
+    {
+      "Name": "Demo ERD",
+      "Age": "12",
+      "Gender": "nama",
+      "Class": "wd19310",
+      "id": 4
+    },
+    {
+      "Name": "PS40419",
+      "Age": "13",
+      "Gender": "nam",
+      "Class": "d",
+      "id": 5
+    }
+  ]
+}

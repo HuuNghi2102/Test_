@@ -1,0 +1,54 @@
+body {
+    font-family: sans-serif;
+    background-color: #dbdddc;
+}
+
+.creat-students {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.creat-students label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.creat-students input[type="text"] {
+    width: 200px;
+    padding: 5px;
+    border: 1px solid #cccccc;
+    border-radius: 3px;
+}
+.zz{
+    margin-left: 49%;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #42d679;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#edit-students {
+    background-color: #2196F3;
+}

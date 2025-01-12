@@ -1,0 +1,122 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+#content > h2{
+    text-align: center;
+    margin-top: 40px;
+    text-transform: uppercase;
+}
+
+
+#content .content__manage{
+    display: grid;
+    grid-template-columns: repeat(3,300px);
+    grid-template-rows: repeat(2, 1fr);
+    gap:40px;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+
+#content .content__manage__item input{
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    border: 1px solid #000;
+    font-size: 16px;
+    
+}
+
+#content .content__manage__item input:focus{
+    background-color: #D1F1F9;
+}
+
+
+#content .content__manage__add-clinic{
+    margin-top: 40px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+#content .content__manage__add-clinic input{
+    background-color: #4362FA;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    color:#fff
+}
+
+#content .content__manage__add-clinic input:hover{
+    cursor: pointer;
+}
+
+
+
+#content .content__show__info{
+    margin-top: 40px;
+}
+
+#content .content__show__info h2{
+    text-align: center;
+    color:#4362FA
+}
+
+
+#content .content__show__info__form-clinic{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+
+#content .content__show__info__form-clinic table{
+    width: 70%;
+}
+
+#content .content__show__info__form-clinic table th{
+    text-align: left;
+    padding-left: 10px;
+    background-color: #4362FA;
+    color:#fff;
+}
+
+
+#content .content__show__info__form-clinic table th,td{
+    padding: 15px   ;
+}
+
+
+#content .content__show__info___btn-diff {
+    display: flex;
+    gap:20px
+}
+
+#content .content__show__info___btn-diff .content__show__info___btn-diff__update{
+    border: none;
+    padding: 5px;
+    border-radius: 4px;
+    background-color: #FACD0C;
+    color:#fff;
+    cursor: pointer;
+}
+
+#content .content__show__info___btn-diff .content__show__info___btn-diff__delete{
+    border: none;
+    padding: 5px;
+    border-radius: 4px;
+    background-color: red;
+    color: #fff;
+    cursor: pointer;
+}
